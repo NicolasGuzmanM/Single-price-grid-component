@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --cyan: hsl(179, 62%, 43%);
+    --dark-cyan: hsl(179, 47%, 52%);
+    --bright-yellow: hsl(71, 73%, 54%);
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ Mobile ------ */
+
+.container {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 722px;
+    margin: 70px auto 70px;
+    overflow: hidden;
+    width: 312px;
+}
+
+/* ------ Header ------ */
+
+    /* ------ Join Our Community ------*/
+
+  header {
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    height: 270px;
+    padding: 8px 24px 24px 24px;
+  }
+
+  header h1 {
+    color: var(--cyan);
+    font-size: 1.2em;
+  }
+
+  .header-span {
+    color: var(--bright-yellow);
+    font-size: 1em;
+    margin: 25px 0 10px 0;
+  }
+
+  header p {
+    color: var(--grayish-blue);
+    font-size: .86em;
+    line-height: 27px;
+    margin-top: 16px;
+  }
+
+/* ------ Main ------ */
+
+    /* ------ Monthly Subscription ------*/
+
+  .mid-container {
+    background-color: var(--cyan);
+    box-sizing: border-box;
+    color: white;
+    height: 230px;
+    padding: 12px 24px 24px 24px;
+  }
+
+  .mid-container h2 {
+    font-size: 1em ;
+    margin-bottom: 18px;
+  }
+
+  .price {
+    color: var(--light-gray);
+  }
+
+  .price-span {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .mid-container button {
+    background-color: var(--bright-yellow);
+    border-radius: 5px;
+    border-style: none;
+    color: var(--light-gray);
+    font-size: 16px;
+    height: 48px;
+    margin-top: 14px ;
+    width: 100%;
+  }
+
+    /* ------ Why Us ------*/
+
+  .bot-container {
+    background-color: var(--dark-cyan);
+    box-sizing: border-box;
+    color: var(--light-gray);
+    height: 230px;
+    padding: 8px 24px 24px 24px;
+  }
+
+  .bot-container h3 {
+    color: white;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .bot-container ul {
+    padding: 0;
+  }
+
+  .bot-container li {
+    font-size: .85em;
+    font-weight: 300;
+    line-height: 20px;
+    list-style: none;
+  }
+
+/* ------ Footer ------ */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ------ Desktop ------ */
+
+@media only screen and (min-width: 680px) {
+  .container {
+    height: 475px;
+    margin: 160px auto 100px;
+    width: 635px;    
+  }
+
+  header {
+    height: 216px;
+    padding-top: 15px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .mid-container {
+    width: 318px;
+  }
+
+  .bot-container {
+    width: 318px;
+  }
+}
